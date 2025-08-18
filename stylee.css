@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ 
+*{
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 990;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    box-shadow: 0 0 8px #707070c3;
+}
+.logo{
+    text-decoration: none;
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navclass a{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 30px;
+    padding: 10px;
+    transition: .4s;
+}
+.navclass a:hover{
+    color: #030b2e;
+    background-color: gainsboro;
+    border-bottom: 2px solid #030b2ed7;
+}
+section{
+    padding: 100px 200px ;
+}
+.main{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .info{
+    text-align: left;
+}
+.main .info h2 {
+   color: #000000;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main .info h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #05136e;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main .info h3{
+    color: #000000;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.mainbtn{
+    color: #fff;
+    background-color: #05136e ;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight:600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+   transition: 0.7s ease;
+}
+.mainbtn:hover{
+    background-color: #030b2e;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color:#030b2e;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+.social-icons a:hover{
+    color: #162aab;
+}
+
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #05136e ;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    border-radius: 10px ;
+    padding: 25px;
+    margin:15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+     transform: scale(1.1);
+}
+.icons{
+     color: #05136e ;
+     font-size: 8em;
+     text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+     color: #05136e ;
+     font-size: 1.2em;
+     font-weight: 700;
+     margin: 10px;
+}
+.projects{
+    background-color: #000016;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.projects-card{
+    background-color: #fff;
+    border: #fff solid 1px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.projects-card:hover{
+    transform: scale(1.1);
+}
+.projects-images img{
+    width: 100%;
+}
+.projects-info{
+    padding: 1em;
+}
+.p-category{
+    font-size: 0.8em; 
+    color: #000;
+
+}
+.p-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 800;
+}
+.more-details{
+    text-decoration: none;
+    color: #05136e;
+
+}
+.more-details:hover{
+    color: purple;
+}
+.contact .icons{
+    font-size: 4.4em;
+}
+.contact .info h3{
+    color: #000;
+}
+.contact .info p{
+    font-size: 1em;
+}
+.footer{
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: #05136e;
+}
+
+/* 📱 Responsive Design */
+
+/* للشاشات المتوسطة (تابلت) */
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .navclass {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .main .info {
+        text-align: center;
+    }
+
+    .main .imgmain img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .projects-card {
+        max-width: 100%;
+    }
+}
+
+/* للشاشات الصغيرة (موبايل) */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.4em;
+    }
+
+    .navclass a {
+        margin-left: 0;
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .main .info h2 {
+        font-size: 1.2em;
+    }
+
+    .main .info h2 span {
+        font-size: 2em;
+    }
+
+    .main .info h3 {
+        font-size: 1.4em;
+    }
+
+    .social-icons a {
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+
+    .icons {
+        font-size: 4em;
+    }
+}
+
+/* للشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+    .main .imgmain img {
+        max-width: 250px;
+    }
+
+    .mainbtn {
+        font-size: 1em;
+        padding: 0.7em 1.5em;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
